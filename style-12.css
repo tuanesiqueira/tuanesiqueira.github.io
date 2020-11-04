@@ -52,7 +52,7 @@ img { width: 100%; height: auto; display: block }
 /* Text paragraphs */
 .container-block p {
     font-family: 'Arvo', sans-serif;
-    font-size: 20px;
+    font-size: calc(17px + (21 - 17) * ((100vw - 320px) / (1600 - 320)));
     color: #2F4F4F;
     line-height: 1.8;   
     margin-bottom: 20px;

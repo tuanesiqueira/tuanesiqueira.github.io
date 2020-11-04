@@ -1,7 +1,21 @@
-/* Browser resets */
-img { display: block; width: 100%; height: auto
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+html { height: 100% }
+body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto }  
+img { width: 100%; height: auto; display: block }
 
-}
+
+/* ========== PAGE CONTAINER ========= */
+
+/* All screen sizes */
+body { background-color: #FFFFBD }
+
+/* Desktops */
+@media (min-width: 768px) { body { padding: 4% 20% } }
+
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 11% 9% } }
+
 
 /* Web page */
 body {
@@ -14,7 +28,7 @@ body {
 /* Main heading */
 h1 {
     font-family: 'Merriweather', serif;    
-    font-size: 84px;
+    font-size: calc(44px + (84 - 44) * ((100vw - 320px) / (1600 - 320)));
     font-weight: normal;
     color: #3434B0;
     letter-spacing: -2px;
@@ -25,7 +39,7 @@ h1 {
 /* Small headings */
 h2 {
     font-family: 'Merriweather', serif;    
-    font-size: 26px;
+    font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1600 - 320)));
     color:#3434B0;
     line-height: 1.4;
     margin-bottom: 4px;
@@ -34,7 +48,7 @@ h2 {
 /* Smaller headings */
 h3 {
     font-family: 'Merriweather', serif;    
-    font-size: 42px;
+    font-size: calc(26px + (42 - 26) * ((100vw - 320px) / (1600 - 320)));
     color: #000;
     letter-spacing:-2px;
     margin-top: 56px;
@@ -44,7 +58,7 @@ h3 {
 /* Text paragraphs */
 p {
     font-family: 'Merriweather', serif;
-    font-size: 22px;
+    font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1600 - 320)));
     color: #455C80;
     line-height: 1.6;
     margin-top: 0;
@@ -56,3 +70,5 @@ img {
     /*Drop shadow effect at right and bottom of image */
     box-shadow: 8px 10px 8px #888;
 }
+
+
