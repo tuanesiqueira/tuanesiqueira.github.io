@@ -68,4 +68,34 @@ img { width: 100%; height: auto; display: block }
 .container-block p:last-child { margin-bottom: 0 }
 
 /* Last content item at bottom of container block */
-.container-block:last-child { margin-bottom: 0 }
+.container-block:last-child { margin-bottom: 0
+}
+
+
+/* ====== FANCY HYPERLINKS ====== */
+
+/* Passive link styles */
+
+a.fancy-link:link, a.fancy-link:visited {
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: #000;
+   border-bottom: solid 2px #000;
+ } 
+ 
+ /* Interactive link styles */
+ 
+ a.fancy-link:hover, a.fancy-link:focus, a.fancy-link:active {
+    text-decoration: none; 
+    padding-bottom: 3px;
+    color: blue;
+   border-bottom: solid 2px blue;
+ }
+
+ a.fancy-link:link, a.fancy-link:visited {
+    text-decoration: none; 
+    color: #000;
+    border-bottom:solid 2px #000;
+    padding-bottom:3px;
+    transition: all 0.2s linear;
+ }

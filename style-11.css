@@ -72,3 +72,64 @@ img { width: 100%; height: auto; display: block }
 
 /* Last content item at bottom of container block */
 .container-block:last-child { margin-bottom: 0 }
+
+
+/* ===== BUTTON STYLES ===== */
+
+/* All button states */
+a.btn-solid {
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif; 
+    font-size: calc(16px + (19 - 16) * ((100vw - 320px) / (1600 - 320)));
+    margin: 20px 40px 20px 0;
+    display: inline-block;
+
+}
+
+/* Passive button states */
+a.btn-solid:link, a.btn-ghost:visited {
+    background-image: linear-gradient (90deg,#e052a0,#f15c41);
+    transition: all 0.2s linear;
+    
+}
+
+/* Interactive button states */
+a.btn-solid:focus, a.btn-solid:hover, a.btn-solid:active {
+    background-image: linear-gradient(90deg,#45C4E1,#4595E6);
+
+}
+
+/* ===== BUTTON STYLES ===== */
+
+/* All button states */
+a.btn-ghost {
+    text-decoration: none;
+    padding: 12px 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif; 
+    font-size: calc(16px + (19 - 16) * ((100vw - 320px) / (1600 - 320)));
+    margin: 20px 40px 20px 0;
+    display: inline-block;
+
+}
+
+/* Passive button states */
+a.btn-ghost:link, a.btn-solid:visited {
+    color: #fff;
+    border: solid 3px #fff;
+    transition: all 0.2s linear;
+}
+
+/* Interactive button states */
+a.btn-ghost:focus, a.btn-ghost:hover, a.btn-ghost:active {
+    color: lightblue;
+    border: solid 3px lightblue;
+}
+
+a.btn-soft { border-radius: 5px }
+  a.btn-rounded { border-radius: 25px }
