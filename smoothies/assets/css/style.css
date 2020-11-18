@@ -84,13 +84,6 @@ p {
 
 /* ======= VISUAL GUIDES TO LAYOUT ELEMENTS ======  */
 
-section { 
-	border: red 2px solid
-}
-
-section div { 
-	border: blue 2px solid
-}
 
 /* Mobiles: Re-order columns inside first and third flexbox parent containers */ 
 @media all and (max-width: 767px) {
