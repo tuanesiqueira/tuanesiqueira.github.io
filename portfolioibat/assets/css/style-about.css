@@ -1,24 +1,31 @@
+/* ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none; box-sizing: border-box }
+html { height: 100% }
+body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto; }  
+html { scroll-behavior: smooth }
 
-/* ----------------------------------------------
-style sheet based style-4 
- * ----------------------------------------------
-*/
 
 /* ==== PAGE WIDTH ==== */
 body {
     font-family: 'Roboto', sans-serif;
-    padding-left: 20%;
-    padding-right: 20%;
     background-color: #ebb531;
+}
+
+/* ==== PAGE CONTAINER ==== */
+/* Desktop */
+@media all and (min-width:768px) {
+    .container-page { padding: 4% 24% 5% 24% }
  }
+ /* Mobiles */
+ @media all and (max-width:767px) {
+     .container-page { padding: 7% 7% 10% 7% }
+}
 
 h1 {
     font-size: 64px;
-    margin-top: 0;
     margin-bottom: 48px;
     font-weight: normal;
     letter-spacing: 4px;
-    font-family: sans-serif;
     color: black;
 }
 
@@ -27,8 +34,8 @@ h2 {
     margin-top: 30px;
     margin-bottom: 4px;
     letter-spacing: 1px;
-    font-family: sans-serif;
     color: black;
+    font-weight: 900;
 }
 
 h3 {
@@ -36,47 +43,20 @@ h3 {
     margin-top: 42px;
     margin-bottom: 4px;
     letter-spacing: 1px;
-    font-family: sans-serif;
     color: black;
 }
 
-p {
-    font-size: 18px;
-    text-align: justify;
-    margin-top: 0;
-    line-height: 1.6;
-    font-family: sans-serif;
-    color: black;
-    }
-
-    
-    
-    /*  ============= WEB BROWSER RESETS ============ */
-* { margin: 0; padding: 0; border: none; box-sizing: border-box }
-html { height: 100% }
-body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto; }  
-html { scroll-behavior: smooth }
-body { font-family: sans-serif }
-
-
-/* ==== PAGE CONTAINER ==== */
-/* Desktop */
-@media all and (min-width:768px) {
-   .container-page { padding: 4% 20% 5% 20% }
-}
-/* Mobiles */
-@media all and (max-width:767px) {
-    .container-page { padding: 7% 7% 10% 7% }
-}
 /* Paragraphs in page container  */
-p {
-   font-weight: normal; line-height: 1.5; margin-bottom:14px;
-   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+.container-page p {
+    line-height: 1.5; 
+    margin-bottom:14px;
+    font-size: calc(18px + (20 - 18) * ((100vw - 320px)/(1600 - 320)));
+    text-align: justify;
+    line-height: 1.6;
+    color: black;
+    font-weight: 400;
 }
 
-    /* ********************************************************************************************
-=============================== FOOTER STYLES TO COPY AND PASTE ===============================
-*********************************************************************************************** */
 
 /* == Begin footer CSS == */
 
@@ -110,14 +90,12 @@ p {
 
 /* Footer headings */
 .container-footer h4 {
-    font-family: 'Roboto', sans-serif;
-   font-weight: normal;
+   font-weight: 900;
    font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
    margin: 0 auto 16px 0;
 }
 
 .container-footer h5 {
-    font-family: sans-serif;
     font-weight: normal;
     font-style:  italic;
     color: #8d9093;
@@ -200,7 +178,6 @@ p {
 }
 
 a.privacy-legal {
-    font-family: sans-serif;    
     display: inline-block;
     color:gray;
     text-decoration: none;
@@ -221,3 +198,4 @@ a.privacy-legal:hover {
 }
 
 /* == End footer CSS == */
+
